@@ -22,7 +22,27 @@
   <input type="password" id="isenha" name="isenha" ><br><br>
   <input type="submit" value="Entrar">
 </form> 
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<p id="hora">Good Evening!</p>
+<script>
+    if (new Date().getHours() < 23) {
+      document.getElementById("hora").innerHTML = "A";
+    }
+    </script>
 
+<p id="Aula 7"></p>
+<script>
+    const hour = new Date().getHours(); 
+    let greeting;
+    
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("Aula 7").innerHTML = greeting;
+    </script>    
 </body>
 </html>
 
